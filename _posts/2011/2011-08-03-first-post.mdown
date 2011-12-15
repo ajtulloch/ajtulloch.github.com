@@ -1,0 +1,10 @@
+---
+
+title: Welcome
+layout: default
+categories: Jekyll
+
+---
+
+Welcome!  This site uses [Jekyll](http://jekyllrb.com) as a static site generator.
+ 

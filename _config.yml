@@ -1,6 +1,6 @@
 # Jekyll
 permalink: /:year/:title/
 paginate: 10 
-exclude: 
+exclude: ["Rakefile", "README.md"]
 name: Andrew Tulloch
 baseurl: ""

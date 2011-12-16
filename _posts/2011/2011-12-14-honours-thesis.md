@@ -18,9 +18,9 @@ We then extend the intensity approach to modelling multivariate credit derivativ
 
 There was a significant implementation component involved in this thesis.  We implemented several stochastic intensity models for univariate CDS calibration, and developed a copula library for use with Monte Carlo simulation to create pricing tools for multivariate credit derivatives.  
 
-Python was the language of choice, due to the excellent scientific computing libraries of [Scipy](http://scipy.org) and [Numpy](http://numpy.org), and the graphical capabilities of [matplotlib](http://matplotlib.sourceforge.net).
+Python was the language of choice, due to the excellent scientific computing libraries of [SciPy](http://scipy.org) and [NumPy](http://numpy.org), and the graphical capabilities of [Matplotlib](http://matplotlib.sourceforge.net).
 
-All code is available on [GitHub](https://github.com/ajtulloch/IntensityCreditModels)
+All code is available on [GitHub](https://github.com/ajtulloch/IntensityCreditModels).
 
 #### Further Information
 

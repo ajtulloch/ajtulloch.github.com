@@ -2,7 +2,7 @@
 
 title: Mathematics Notes
 layout: default
-categories: mathematics
+categories: mathematics statistics
 ---
 
 

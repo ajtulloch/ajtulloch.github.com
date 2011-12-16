@@ -2,8 +2,12 @@
 
 title: Honours Thesis
 layout: default
-categories: mathematics
+categories: mathematics credit-risk
 ---
+
+I recently completed an Honours thesis in Applied Mathematics at the University of Sydney.  The thesis was focused on credit risk models, and sought to develop and assess new stochastic intensity models.
+
+These topics will be discussed in later posts.  
 
 #### Abstract
 
@@ -15,4 +19,12 @@ We then extend the intensity approach to modelling multivariate credit derivativ
 
 Please see the [full thesis](/PDFs/AndrewTulloch-HonoursThesis.pdf).
 
-For information 
+#### Code
+
+The thesis contained thorough implementations of all theoretical models described.  The language of choice was Python, due to its strong scientific computation libraries ([SciPy](http://scipy.org) and [NumPy](http://numpy.org/)), along with an excellent data visualisation library ([matplotlib](http://matplotlib.sourceforge.net/)).  
+
+All code developed in the course of the thesis is available on [GitHub](https://github.com/ajtulloch/IntensityCreditModels).      
+
+
+
+

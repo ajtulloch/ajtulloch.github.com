@@ -1,3 +1,6 @@
+body {
+  text-align: justify;
+}
 header h1, header h1 a{
 	text-align: center;
 	margin: 40px 0 20px 0;

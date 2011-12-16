@@ -13,14 +13,14 @@ is_index: true
 		<ul>
 			{% if paginator.previous_page %}
 				{% if paginator.previous_page == 1 %}
-				<li class="previous"><a href="/{{ site.baseurl }}">&larr; Previous</a></li>
+				<li class="previous"><a href="/">&larr; Previous</a></li>
 				{% else %}
-				<li class="previous"><a href="{{ site.baseurl }}/{{ site.pagination_dir }}{{ paginator.previous_page }}">&larr; Previous</a></li>
+				<li class="previous"><a href="/{{ site.pagination_dir }}{{ paginator.previous_page }}">&larr; Previous</a></li>
 				{% endif %}
 			{% endif %}
 				<li><p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p></li>
 			{% if paginator.next_page %}
-				<li class="next"><a href="{{ site.baseurl }}/{{ site.pagination_dir }}{{ paginator.next_page }}">Next &rarr;</a></li>
+				<li class="next"><a href="/{{ site.pagination_dir }}{{ paginator.next_page }}">Next &rarr;</a></li>
 			{% endif %}
 		</ul>
 	</div>

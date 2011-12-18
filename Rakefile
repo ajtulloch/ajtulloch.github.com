@@ -11,7 +11,9 @@ task :build do
         
       end
     end
-    system("jekyll --server")
+    system("jekyll --server &")
+    system("open", "http://localhost:4000")
+    
   end
   
 end

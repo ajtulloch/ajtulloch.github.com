@@ -1,6 +1,6 @@
 ---
 
-title: Mathematics Notes
+title: Mathematics Lecture Notes
 layout: default
 categories: mathematics statistics
 ---

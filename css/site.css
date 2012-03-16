@@ -1,7 +1,18 @@
+/*Colours worth mentioning:
+  Background colour
+  Text color
+  Anchor color
+  Nav list anchor
+  Nav list anchor hover
+  Horizontal rule
+*/
+
+
 body {
-  font: 14px 'Helvetica Neue';
+  background: #fff;
   color: #444;
   margin-top: 60px;
+  margin-bottom: 60px;
   text-rendering: optimizelegibility;
 }
 

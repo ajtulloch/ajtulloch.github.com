@@ -14,7 +14,6 @@ This is a compilation of various sets of lecture notes I created during my Bache
 * [AMH4 - Advanced Option Pricing](/PDFs/AMH4LectureNotes.pdf)
 * [MATH 3975 - Financial Mathematics](/PDFs/MATH3975LectureNotes.pdf)
 
-
 ## Pure Mathematics
 
 * [MATH 3961 - Metric Spaces](/PDFs/MATH3961LectureNotes.pdf)

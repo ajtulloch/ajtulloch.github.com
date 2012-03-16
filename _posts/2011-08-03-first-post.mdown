@@ -2,7 +2,7 @@
 
 title: Welcome
 layout: post
-categories: code jekyll
+categories: code meta
 
 ---
 

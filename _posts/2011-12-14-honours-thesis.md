@@ -1,8 +1,7 @@
 ---
 title: Honours Thesis
 layout: post
-categories: mathematics credit-risk
-
+categories: mathematics finance
 ---
 
 This year, I completed an honours thesis in Applied Mathematics at the University of Sydney.  The thesis focused on the development of univariate and multivariate intensity models for credit risk.

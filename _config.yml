@@ -1,7 +1,7 @@
 # Jekyll
 permalink: /:year/:title/
-paginate: 2 
+# paginate: 2 
 exclude: ["Rakefile", "README.md"]
 name: Andrew Tulloch
 baseurl: ""
-pagination_dir: 'page'
+# pagination_dir: 'page'

@@ -3,11 +3,13 @@ layout: default
 is_index: true
 ---
 <div class="posts">
+  <hr>
 {% for post in site.posts %}
   <div class="post">
-    <p class="date">{{ post.date | date: "%B %e, %Y" }}</p>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
     {{ post.content }}
+    <hr>
   </div>
 {% endfor %}
 </div>

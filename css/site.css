@@ -1,10 +1,8 @@
 body {
-  font: 14px Helvetica Neue;
-  margin-top: 1em;
+  font: 14px 'Helvetica Neue';
   color: #444;
   margin-top: 60px;
   text-rendering: optimizelegibility;
-/*  display: block;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,17 +18,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
-.list {
-  clear: left;
-  margin-top: 14px;
-}
-
-.list img {
-  float: left;
-}
-
-
 .date {
   margin-top: -10px;
   margin-bottom: 15px;
@@ -38,10 +25,10 @@ a:hover {
 
 #dsq-content {
   margin-top: -54px;
-/*  padding-top: -50px;*/
 }
 
 /* Sidebar */
+
 ul.nav{
   border-top: 1px solid #ccc;
 }

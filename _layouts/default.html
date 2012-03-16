@@ -4,11 +4,11 @@
 	<meta charset="utf-8" />
 	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
 
-	<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="/css/css.css" type="text/css">
+	<link rel="stylesheet" href="/css/reset.css" type="text/css">
+	<link rel="stylesheet" href="/css/text.css" type="text/css">
+	<link rel="stylesheet" href="/css/960_12_col.css" type="text/css">
 	
 	<script type="text/javascript">
-
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-27754379-1']);
     _gaq.push(['_trackPageview']);
@@ -18,30 +18,16 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-
   </script>
-  
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      extensions: ["tex2jax.js"],
-      jax: ["input/TeX", "output/HTML-CSS"],
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true
-      },
-      "HTML-CSS": { availableFonts: ["TeX"] }
-    });
-  </script>
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
-  
+    
 </head>
 <body>
-  <div class="sidebar">
-  
+<div class="container_12">
+  <div class="sidebar grid_2">
+    Testing
   </div>
   
-  <div class="main">
+  <div class="main grid_8">
     {{ content }}
   </div>
   

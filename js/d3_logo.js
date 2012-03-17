@@ -1,10 +1,10 @@
 
 $(document).ready( function() {
-  var node1 = {x: 10, y: 90, letter: "A"};
-  var node2 = {x: 30, y: 40, letter: "A"};
-  var node3 = {x: 50, y: 90, letter: "A"};
-  var node4 = {x: 20, y: 65, letter: "A"};
-  var node5 = {x: 40, y: 65, letter: "A"};
+  var node1 = {x: 20, y: 60, letter: "A"};
+  var node2 = {x: 40, y: 10, letter: "A"};
+  var node3 = {x: 60, y: 60, letter: "A"};
+  var node4 = {x: 30, y: 35, letter: "A"};
+  var node5 = {x: 50, y: 35, letter: "A"};
 
   var l1 = {source: node1, target: node4};
   var l2 = {source: node4, target: node2};
@@ -24,10 +24,10 @@ $(document).ready( function() {
   // var jl2 = {source: jn2, target: jn4};
   // var jl3 = {source: jn4, target: jn3};
 
-  var tn0 = {x: 160, y: 40, letter: "T"};
-  var tn1 = {x: 180, y: 40, letter: "T"};
-  var tn2 = {x: 200, y: 40, letter: "T"};
-  var tn3 = {x: 180, y: 90, letter: "T"};
+  var tn0 = {x: 140, y: 10, letter: "T"};
+  var tn1 = {x: 160, y: 10, letter: "T"};
+  var tn2 = {x: 180, y: 10, letter: "T"};
+  var tn3 = {x: 160, y: 60, letter: "T"};
 
   var tl0 = {source: tn0, target: tn1};
   var tl1 = {source: tn1, target: tn2};
@@ -51,7 +51,7 @@ $(document).ready( function() {
 
   var vis = d3.select(".d3-logo").append("svg")
       .attr("width", w)
-      .attr("height", h);
+      .attr("height", h)
 
   // vis.append("rect")
   //     .attr("height", h)
@@ -60,10 +60,10 @@ $(document).ready( function() {
   //     .attr("fill", "none")
 
   var force = d3.layout.force()
-      .charge(-200)
+      .charge(-50)
       // .linkDistance(20)
       // .linkStrength(1)
-      .friction(0.1)
+      // .friction(0.1)
       .nodes(nodes)
       .links(links)
       .size([w, h])
@@ -102,5 +102,6 @@ $(document).ready( function() {
 
   vis.on("click", function() {
     force.start()
+    mixpanel.track("d3 Logo Click")
   })
 });

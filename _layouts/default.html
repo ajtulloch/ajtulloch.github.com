@@ -24,19 +24,34 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-  
   <script type="text/javascript" src="/js/d3_logo.js"></script>
+  
+  <script type="text/javascript">
+      (function(d,c){var a,b,g,e;a=d.createElement("script");a.type="text/javascript";
+      a.async=!0;a.src=("https:"===d.location.protocol?"https:":"http:")+
+      '//mixpanel.com/site_media/js/api/mixpanel.2.js';b=d.getElementsByTagName("script")[0];
+      b.parentNode.insertBefore(a,b);c._i=[];c.init=function(a,d,f){var b=c;
+      "undefined"!==typeof f?b=c[f]=[]:f="mixpanel";g=['disable','track','track_links',
+      'track_forms','register','register_once','unregister','identify','name_tag','set_config'];
+      for(e=0;e<g.length;e++)(function(a){b[a]=function(){b.push([a].concat(
+      Array.prototype.slice.call(arguments,0)))}})(g[e]);c._i.push([a,d,f])};window.mixpanel=c}
+      )(document,[]);
+      mixpanel.init("71aa93d0eb5d802f519ed1d98fcdbd91");
+  </script>
   
   <script type="text/javascript" src="http://use.typekit.com/lzh4sim.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
 </head>
 <body>
-
+<div class="container_12">
+  <div class="grid_10">
+    <h1><a href="/">Andrew Tulloch</a></h1>
+    <hr>
+  </div>
+</div>
 <div class="container_12">
   <div class="sidebar grid_3">
-    <hr>
-    <h1><a href="/">Andrew Tulloch</a></h1>
     <div class="d3-logo">
     </div>
     <ul class="nav"> 

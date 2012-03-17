@@ -57,3 +57,17 @@ ul.nav li a{
 ul.nav li a:hover{
   color: #000;
 }
+
+/* Code */
+
+pre{
+  margin:16px 0;
+  padding-left:10px;
+  border-left:1px solid #eee;
+  overflow:auto;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+pre code{
+/*  display:block;*/
+}
+

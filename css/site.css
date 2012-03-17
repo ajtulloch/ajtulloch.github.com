@@ -43,12 +43,14 @@ a:hover {
 ul.nav{
   border-top: 1px solid #ccc;
 }
+
 ul.nav li{
   list-style-type: none;
   margin: 0;
   padding: 8px 0;
   border-bottom: 1px solid #ccc;
 }
+
 ul.nav li a{
   color: #333;
   font-weight: bold;
@@ -72,6 +74,6 @@ pre{
   border-radius: 10px;
 }
 pre code{
-/*  display:block;*/
+  display:block;
 }
 

@@ -63,8 +63,11 @@ ul.nav li a:hover{
 pre{
   margin:16px 0;
   padding-left:10px;
-  border-left:1px solid #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left:1px solid #ccc;
   overflow:auto;
+  background: #eee;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 pre code{

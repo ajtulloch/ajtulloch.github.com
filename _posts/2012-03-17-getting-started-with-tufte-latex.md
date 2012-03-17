@@ -1,9 +1,13 @@
 ---
-title: Honours Thesis
+title: Getting Started with Tufte-LaTeX
 layout: post
 categories: mathematics finance
 
 ---
+
+It seems that almost everyone in a technical field has heard of [Edward Tufte][0], whose [books][tufte1] [on][tufte2] [data][tufte3] [visualisation][tufte4] are justifiably regarded as masterpieces.  
+
+While these books are exceptional works on data visualisation, they are also masterfully typeset.  Thankfully, it is relatively simple to apply the typographic sense of Tufte to your everday LaTeX documents, through Tufte-LaTeX.
 
 [Tufte-Latex][1] is a great LaTeX class for jazzing up your technical documents.  As a first example, have a look on the [examples][2] available from the homepage, or have a look at [this example][3] I created from my [AMS-TeX notes][4]  on Functional Analysis.
 
@@ -41,7 +45,7 @@ I'll now show you how to convert an existing AMS document into a corresponding T
 
 Consider a typical AMSTeX preamble, as below:
 
-{% highlight latex linenos %}
+{% highlight latex %}
 \documentclass[10pt, oneside, reqno]{amsbook}
 \usepackage{geometry, setspace, graphicx}
 \usepackage{enumerate, amssymb}
@@ -65,7 +69,7 @@ Consider a typical AMSTeX preamble, as below:
 
 We replace this with the following:
 
-{% highlight latex linenos %}
+{% highlight latex %}
 \documentclass[justified]{tufte-book}
 
 \hypersetup{colorlinks}
@@ -114,7 +118,7 @@ Tufte-LaTeX encourages the use of the wide margin to place asides and other note
 I typically use `sidenote` by default, and use `marginnote` whenever the content I am placing in the sidebar is numbered already, e.g. an exercise environment.  
 
 As an example, we can replace the following block of code:
-{% highlight latex linenos %}
+{% highlight latex %}
 \begin{note}
     If $x_n \rightarrow x,y_n \rightarrow y$, then
     $\langle x_n, y_n \rangle \rightarrow \langle x, y \rangle.$
@@ -123,7 +127,7 @@ As an example, we can replace the following block of code:
 
 with 
 
-{% highlight latex linenos %}
+{% highlight latex %}
 \sidenote{
     If $x_n \rightarrow x,y_n \rightarrow y$, then
     $\langle x_n, y_n \rangle \rightarrow \langle x, y \rangle.$
@@ -132,7 +136,7 @@ with
 
 and similarly we replace 
 
-{% highlight latex linenos %}
+{% highlight latex %}
 \begin{exer}
     If $T_1, \dots, T_n \in \mathcal L(X)$ which commute with
     each other, then $T_1 \dots T_n$ is invertible if and only
@@ -142,7 +146,7 @@ and similarly we replace
 
 with 
 
-{% highlight latex linenos %}
+{% highlight latex %}
 \marginnote{
   \begin{exer}
     If $T_1, \dots, T_n \in \mathcal L(X)$ which commute with
@@ -157,7 +161,7 @@ with
 The Tufte-LaTeX package provides a useful command, `\newthought`, that mimicks the style of the opening words of a chapter in Tufte's publications.  It converts the selected words into a properly spaces small-caps format, and looks excellent.  It should be used sparingly, at the start of a paragraph following a new section or chapter.  
 
 For example,   
-{% highlight latex linenos %}
+{% highlight latex %}
 \chapter{Compact Operators}
 
 \newthought{We now turn to} compact operators.  In general,
@@ -171,11 +175,15 @@ theory.
 And there you have it!  With these quick changes, it becomes simple to convert your staid AMS-TeX documents to pieces of art.  Give it a try and see how you go!
 
 
+[0]: http://en.wikipedia.org/wiki/Edward_Tufte "Edward Tufte"
 [1]: http://code.google.com/p/tufte-latex/ "Tufte-LaTeX"
 [2]: http://tufte-latex.googlecode.com/files/sample-book-3.5.0.pdf "Tufte-LaTeX Sample"
 [3]: /PDFs/Tufte-Latex.pdf
 [4]: /PDFs/AMSTex.pdf
-
+[tufte1]: http://www.edwardtufte.com/tufte/books_vdqi "The Visual Display of Quantitative Information"
+[tufte2]: http://www.edwardtufte.com/tufte/books_ei "Envisioning Information"
+[tufte3]: http://www.edwardtufte.com/tufte/books_visex "Visual Explanations"
+[tufte4]: http://www.edwardtufte.com/tufte/books_be "Beautiful Evidence" 
 
 
 

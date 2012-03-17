@@ -69,6 +69,7 @@ pre{
   overflow:auto;
   background: #eee;
   -webkit-font-smoothing:subpixel-antialiased;
+  border-radius: 10px;
 }
 pre code{
 /*  display:block;*/

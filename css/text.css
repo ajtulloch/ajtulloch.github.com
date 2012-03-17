@@ -15,6 +15,7 @@ body {
 pre,
 code {
   font-family: Monaco, Menlo, Consolas, monospace;
+  font-size: 13px;
 }
 
 hr {
@@ -28,7 +29,7 @@ hr {
 ----------------------------------------------------------------------------------------------------*/
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2 {
@@ -40,15 +41,15 @@ h3 {
 }
 
 h4 {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 h5 {
-  font-size: 17px;
+  font-size: 14px;
 }
 
 h6 {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* `Spacing

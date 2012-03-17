@@ -6,8 +6,4 @@ categories: code meta
 
 ---
 
-Welcome!  
-
-This site uses [Jekyll](http://jekyllrb.com) as a static site generator.  It's hosted on [GitHub](http://github.com/ajtulloch/ajtulloch.github.com).  
-
-We use the [960.gs](http://960.gs) framework for our grid setup.
+Welcome!  This site uses [Jekyll](http://jekyllrb.com) as a static site generator.  The style of the site draws from Twitter's [Bootstrap](http://twitter.github.com/bootstrap).

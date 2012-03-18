@@ -6,4 +6,4 @@ categories: code meta
 
 ---
 
-Welcome!  This site uses [Jekyll](http://jekyllrb.com) as a static site generator.  The style of the site draws from Twitter's [Bootstrap](http://twitter.github.com/bootstrap).
+Welcome!  This site uses [Jekyll](http://jekyllrb.com) as a static site generator.

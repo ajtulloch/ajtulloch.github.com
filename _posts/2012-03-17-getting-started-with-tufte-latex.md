@@ -5,13 +5,13 @@ categories: mathematics finance
 
 ---
 
-It seems that almost everyone in a technical field has heard of [Edward Tufte][0], whose [books][tufte1] [on][tufte2] [data][tufte3] [visualisation][tufte4] are justifiably regarded as masterpieces.  
+It seems that almost everyone in a technical field has heard of [Edward Tufte][0], whose [books][tufte1] [on][tufte2] [data][tufte3] [visualisation][tufte4] are justifiably regarded as masterpieces. 
 
 While these books are exceptional works on data visualisation, they are also masterfully typeset.  Thankfully, it is relatively simple to apply the typographic sense of Tufte to your everday LaTeX documents, through Tufte-LaTeX.
 
 [Tufte-LaTeX][1] is a great LaTeX class for jazzing up your technical documents.  As a first example, have a look on the [examples][2] available from the Tufte-LaTeX homepage, or have a look at [this example][3] ([source][tl-pmh3]) I created from my [AMS-TeX notes][4] ([source][ams-pmh3])  on Functional Analysis.
 
-As we can see, this class can really improve the reading experience for users of your technical documents, and break up the Computer Modern/AMS-TeX monotony that users of the `ArXiV` would be far too familiar with.  So let's get started!
+As we can see, this class can really improve the reading experience for users of your technical documents, and break up the Computer Modern/AMS-TeX monotony that users of the ArXiV would be far too familiar with.  So let's get started!
 
 ### Installation
 

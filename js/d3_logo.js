@@ -46,7 +46,7 @@ $(document).ready( function() {
       fill = d3.scale.category20c(),
       r = 5;
 
-  var vis = d3.select(".d3-logo").append("svg")
+  var vis = d3.select("#d3-logo").append("svg")
       .attr("width", w)
       .attr("height", h)
 

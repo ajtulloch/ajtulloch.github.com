@@ -41,9 +41,6 @@ $(document).ready( function() {
                // jl0, jl1, jl2, jl3,
                tl0, tl1, tl2];
 
-  console.log(links);
-  console.log(nodes);
-
   var w = 220,
       h = 100,
       fill = d3.scale.category20c(),

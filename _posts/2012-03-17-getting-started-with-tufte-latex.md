@@ -152,16 +152,16 @@ with
   \begin{exer}
     If $T_1, \dots, T_n \in \mathcal L(X)$ which commute with
     each other, then $T_1 \dots T_n$ is invertible if and only
-    if the individual elements are invertible.  
+    if the individual elements are invertible.
   \end{exer}
 }
 {% endhighlight %}
 
 #### Paragraph Starts
 
-The Tufte-LaTeX package provides a useful command, `\newthought`, that mimicks the style of the opening words of a chapter in Tufte's publications.  It converts the selected words into a properly spaces small-caps format, and looks excellent.  It should be used sparingly, at the start of a paragraph following a new section or chapter.  
+The Tufte-LaTeX package provides a useful command, `\newthought`, that mimicks the style of the opening words of a chapter in Tufte's publications.  It converts the selected words into a properly spaces small-caps format, and looks excellent.  It should be used sparingly, at the start of a paragraph following a new section or chapter.
 
-For example,   
+For example,
 {% highlight latex %}
 \chapter{Compact Operators}
 

@@ -2,6 +2,14 @@
 title: Getting Started with Tufte-LaTeX
 layout: post
 categories: mathematics finance
+intro: |
+    It seems that almost everyone in a technical field has heard of [Edward Tufte](http://en.wikipedia.org/wiki/Edward_Tufte), whose [books](http://www.edwardtufte.com/tufte/books_vdqi) [on](http://www.edwardtufte.com/tufte/books_ei) [data](http://www.edwardtufte.com/tufte/books_visex) [visualisation](http://www.edwardtufte.com/tufte/books_be) are justifiably regarded as masterpieces. 
+
+    While these books are exceptional works on data visualisation, they are also masterfully typeset.  Thankfully, it is relatively simple to apply the typographic sense of Tufte to your everday LaTeX documents, through Tufte-LaTeX.
+
+    [Tufte-LaTeX](http://code.google.com/p/tufte-latex/) is a great LaTeX class for jazzing up your technical documents.  As a first example, have a look on the [examples](http://tufte-latex.googlecode.com/files/sample-book-3.5.0.pdf) available from the Tufte-LaTeX homepage, or have a look at [this example](/PDFs/Tufte-Latex.pdf) ([source](Files/Tufte-LatexPMH3LectureNotes.tex)) I created from my [AMS-TeX notes](/PDFs/AMSTex.PDF) ([source](Files/PMH3LectureNotes.tex))  on Functional Analysis.
+
+    As we can see, this class can really improve the reading experience for users of your technical documents, and break up the Computer Modern/AMS-TeX monotony that users of the ArXiV would be far too familiar with.  So let's get started!
 
 ---
 

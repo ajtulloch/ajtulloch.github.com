@@ -2,6 +2,11 @@
 title: Honours Thesis
 layout: post
 categories: mathematics finance
+intro: |
+    This year, I completed an honours thesis in Applied Mathematics at the University of Sydney.  The thesis focused on the development of univariate and multivariate intensity models for credit risk.
+
+    > In this thesis, we examine the use of intensity models in modelling credit risk. In this approach, we assume the existence of a stochastic process λ representing the instantaneous default probability of an obligor. We then specify various Levy processes for this (intensity) process λ, with particular emphasis on non-Gaussian Ornstein-Uhlenbeck process, derive various theoretical properties of these models, and calibrate these models to credit market data. We find that Gamma-OU and Inverse Gaussian-OU Levy processes can be effectively applied in an intensity context, and provide several advantages over conventional Poisson processes.
+
 ---
 
 This year, I completed an honours thesis in Applied Mathematics at the University of Sydney.  The thesis focused on the development of univariate and multivariate intensity models for credit risk.

@@ -3,6 +3,7 @@
 title: Mathematics Lecture Notes
 layout: post
 categories: mathematics statistics
+intro: This is a compilation of various sets of lecture notes I created during my Bachelors degree in Mathematics at the University of Sydney.  All `.tex` files are available at the [GitHub repository](https://github.com/ajtulloch/SydneyUniversityMathematicsNotes).
 ---
 
 

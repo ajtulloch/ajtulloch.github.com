@@ -7,7 +7,13 @@ is_index: true
   <div class="post">
     <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
-    {{ post.content }}
+    {% if post.intro %}
+      {{ post.intro | markdownify }}  
+      <p><a href="{{ post.url }}">Continue Reading »</a></p>
+    {% else %}
+      {{ post.content }}
+    {% endif %}
+    
     <hr>
   </div>
 {% endfor %}

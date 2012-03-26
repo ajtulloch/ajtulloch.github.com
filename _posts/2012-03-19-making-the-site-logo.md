@@ -2,7 +2,7 @@
 title: Making the Site Logo with D3.js
 layout: post
 intro: |
-    See the `A T` logo in the sidebar?  Click it, and see what happens! You can also drag the individual nodes around, and watch as they interact with each other!
+    See the `AT` logo in the sidebar?  Click it, and see what happens! You can also drag the individual nodes around, and watch as they interact with each other!
 
     This is all thanks to the magic of [Mike Bostock's][mbostock] [D3.js][d3.js] Javascript library, which provides an efficient set of methods to manipulate the DOM.  From the [website][d3.js], 
 
@@ -14,9 +14,10 @@ intro: |
     [d3.js tutorials]: http://mbostock.github.com/d3/api/
     [d3.js gallery]: http://mbostock.github.com/d3/ex/#user_gallery
     [d3.js examples]: http://mbostock.github.com/d3/ex/
+    
 ---
 
-See the `A T` logo in the sidebar?  Click it, and see what happens! You can also drag the individual nodes around, and watch as they interact with each other!
+See the `AT` logo in the sidebar?  Click it, and see what happens! You can also drag the individual nodes around, and watch as they interact with each other!
 
 This is all thanks to the magic of [Mike Bostock's][mbostock] [D3.js][d3.js] Javascript library, which provides an efficient set of methods to manipulate the DOM.  From the [website][d3.js], 
 

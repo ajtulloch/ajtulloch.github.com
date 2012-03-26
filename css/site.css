@@ -25,9 +25,6 @@ h1 {
   font-weight: 300;
 }
 
-.post {
-  text-align: justify;
-}
 a {
   color: steelblue;
   text-decoration: none;
@@ -38,11 +35,21 @@ a:hover {
 }
 
 blockquote {
-  border-left: 1px solid #ccc;
-  padding-left: 10px;
-  margin-left: 10px;
+  margin-left: 20px;
+  padding: 5px;
   font-style: italic;
+/*  border-radius: 10px;*/
+/*  -moz-border-radius: 10px;*/
+/*  -webkit-border-radius: 10px;*/
+  border-left: 1px solid #ccc;
+  overflow:auto;
+/*  background: #eee;*/
 }
+
+blockquote p {
+  margin-bottom: 0px;
+}
+
 
 .date {
   margin-top: -10px;
@@ -67,40 +74,47 @@ blockquote {
 /*  margin-bottom: 5px;*/
 }
 
-ul.nav{
+ul.nav {
   border-top: 1px solid #ccc;
 }
 
-ul.nav li{
+ul.nav li {
   list-style-type: none;
   margin: 0;
   padding: 8px 0;
   border-bottom: 1px solid #ccc;
 }
 
-ul.nav li a{
+ul.nav li a {
   color: #333;
   font-weight: bold;
   text-decoration: none;
 }
-ul.nav li a:hover{
+ul.nav li a:hover {
   color: #000;
 }
 
 /* Code */
 
-pre{
+pre {
   margin:16px 0;
   padding-left:10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-left:1px solid #ccc;
   overflow:auto;
   background: #eee;
   -webkit-font-smoothing:subpixel-antialiased;
   border-radius: 10px;
-}
-pre code{
-  display:block;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
+
+code {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 1px 1px;
+  font-size: 14px;
+  background: #eee;
+}

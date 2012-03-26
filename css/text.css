@@ -82,6 +82,7 @@ pre,
 table,
 address,
 fieldset,
+blockquote,
 figure {
   margin-bottom: 15px;
 }

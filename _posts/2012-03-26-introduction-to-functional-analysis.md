@@ -23,13 +23,13 @@ Formally, a vector space is a set $V$ of elements, known as *vectors*, over a fi
 
 #### Norms, Metrics, and Cauchy Sequences
 
-Vector spaces may be endowed with a *norm*, forming a *normed vector space*.  A norm is a function that represents the notion of a *length* of a vector.  Formally, a norm on $V$ is a function $\| \cdot \|: X \rightarrow \mathbb{R}$ satisfying the following properties:
+Vector spaces may be endowed with a *norm*, forming a *normed vector space*.  A norm is a function that represents the notion of a *length* of a vector.  Formally, a norm on $V$ is a function $\\\| \cdot \\\|: X \rightarrow \mathbb{R}$ satisfying the following properties:
 
-1. Every positive vector has positive length, $\| v \| \geq 0$ with equality if and only if $v = 0$. 
-2. Scaling a vector scales it's length, $\| \alpha v \| = |\alpha| \| v \|$ for all $\alpha \in F, v \in V$.
-3. The norm satisfies the triangle inequality, $\| u + v \| \leq \| u \| + \| v \|$ for all $u, v \in V$.
+1. Every positive vector has positive length, $\\\| v \\\| \geq 0$ with equality if and only if $v = 0$. 
+2. Scaling a vector scales it's length, $\\\| \alpha v \\\| = |\alpha| \\\| v \\\|$ for all $\alpha \in F, v \in V$.
+3. The norm satisfies the triangle inequality, $\\\| u + v \\\| \leq \\\| u \\\| + \\\| v \\\|$ for all $u, v \in V$.
 
-We call the pair $(V, \| \cdot \|)$ a *normed vector space*.  Notice that given a norm on a vector space, we can define some notion of distance - the distance between $u$ and $v$ is given as $\| u - v \|$. If we check the properties of the norm, we see that this obeys the various properties we would expect a distance function to have (the distance between two vectors is greater than zero, except when they are equal, in which case the distance is zero, etc.).  This function $d(u, v) = \| u - v\|$ then defines a *metric* on our vector space $V$.  The pair $(V, d)$ is known as a *metric space*.  
+We call the pair $(V, \\\| \cdot \\\|)$ a *normed vector space*.  Notice that given a norm on a vector space, we can define some notion of distance - the distance between $u$ and $v$ is given as $\\\| u - v \\\|$. If we check the properties of the norm, we see that this obeys the various properties we would expect a distance function to have (the distance between two vectors is greater than zero, except when they are equal, in which case the distance is zero, etc.).  This function $d(u, v) = \\\| u - v\\\|$ then defines a *metric* on our vector space $V$.  The pair $(V, d)$ is known as a *metric space*.  
 
 With the notion of a metric defined, we can now discuss issues of convergence in this metric space.  A key property of a metric space is that of *completeness*, which captures the intuitive notion of having "no points missing".  Formally, a metric space is complete if every Cauchy sequence converge in $M$. 
 

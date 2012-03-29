@@ -3,20 +3,24 @@ title: Elements of Statistical Learning - Chapter 2 Solutions
 layout: post
 mathjax: true
 intro: |
-    The Stanford textbook [Elements of Statistical Learning][esl] is an excellent (and [freely available][esl-download]) graduate-level text in data mining and machine learning.  I'm currently working through it, and I'm putting my (partial) exercise solutions up for anyone who might find them useful.  The first set of solutions is for Chapter 2 - *An Overview of Supervised Learning*, introducing least squares and *k*-nearest-neighbour techniques. 
+    The Stanford textbook [Elements of Statistical Learning][esl] by [Hastie][hastie], [Tibshirani][tibshirani], and [Friedman][friedman] is an excellent (and [freely available][esl-download]) graduate-level text in data mining and machine learning.  I'm currently working through it, and I'm putting my (partial) exercise solutions up for anyone who might find them useful.  The first set of solutions is for Chapter 2, *An Overview of Supervised Learning*, introducing least squares and *k*-nearest-neighbour techniques. 
 
     [esl]: http://www-stat.stanford.edu/~tibs/ElemStatLearn/
     [esl-download]: http://www.stanford.edu/~hastie/local.ftp/Springer/ESLII_print5.pdf
-
+    [hastie]: http://www.stanford.edu/~hastie/
+    [tibshirani]: http://www-stat.stanford.edu/~tibs/
+    [friedman]: http://www-stat.stanford.edu/~jhf/
 ---
 
-The Stanford textbook [Elements of Statistical Learning][esl] is an excellent (and [freely available][esl-download]) graduate-level text in data mining and machine learning.  I'm currently working through it, and I'm putting my (partial) exercise solutions up for anyone who might find them useful.  The first set of solutions is for Chapter 2 - *An Overview of Supervised Learning*, introducing least squares and *k*-nearest-neighbour techniques. 
-
+The Stanford textbook [Elements of Statistical Learning][esl] by [Hastie][hastie], [Tibshirani][tibshirani], and [Friedman][friedman] is an excellent (and [freely available][esl-download]) graduate-level text in data mining and machine learning.  I'm currently working through it, and I'm putting my (partial) exercise solutions up for anyone who might find them useful.  The first set of solutions is for Chapter 2, *An Overview of Supervised Learning*, introducing least squares and *k*-nearest-neighbour techniques. 
 
 [esl]: http://www-stat.stanford.edu/~tibs/ElemStatLearn/
 [esl-download]: http://www.stanford.edu/~hastie/local.ftp/Springer/ESLII_print5.pdf
+[hastie]: http://www.stanford.edu/~hastie/
+[tibshirani]: http://www-stat.stanford.edu/~tibs/
+[friedman]: http://www-stat.stanford.edu/~jhf/
 
-### Exercises
+### Exercise Solutions
 
 See the solutions in [PDF][chap2-pdf] format ([source][chap2-tex]) for a more pleasant reading experience. 
 
@@ -32,7 +36,7 @@ The assertion is equivalent to showing that \[
     \text{argmax}_i \hat y_i = \text{argmin}_k \\\| t_k - \hat y \\\| = \text{argmin}_k \\\|\hat y - t_k \\\|^2
 \] by monotonicity of $x \mapsto x^2$ and symmetry of the norm.  
 
-WLOG, let $\\\| \cdot \\\|$ be the Euclidean norm $\\\| \cdot \\\|_2$.  Let $k = \text{argmax}_i \hat y_i$, with $\hat y_k = \max y_i$.  Note that then $\hat y_k \geq \frac{1}{K}$, since $\sum \hat y_i = 1$.   
+Without loss of generality, let $\\\| \cdot \\\|$ be the Euclidean norm $\\\| \cdot \\\|_2$.  Let $k = \text{argmax}_i \hat y_i$, with $\hat y_k = \max y_i$.  Note that then $\hat y_k \geq \frac{1}{K}$, since $\sum \hat y_i = 1$.   
 
 Then for any $k' \neq k$ (note that $y_{k'} \leq y_k$), we have \begin{align}
     \\\| y - t_{k'} \\\|_2^2 - \\\| y - t_k \\\|_2^2 &= y_k^2 + \left(y_{k'} - 1 \right)^2 - \left( y_{k'}^2 + \left(y_k - 1 \right)^2 \right) \\\\

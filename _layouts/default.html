@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-    <title>{{ site.name }}{% if page.title %}{{ page.title }} | {% endif %}</title>
+    <title>{{ site.name }}{% if page.title %} | {{ page.title }}{% endif %}</title>
 
     {% include styles.html %}
     {% include scripts.html %}

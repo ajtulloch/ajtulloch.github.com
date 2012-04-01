@@ -1,17 +1,29 @@
 ---
-title: LaTeX2Markdown
-layout: post
+
+title: LaTeX2Markdown Demonstration
+layout: project
 mathjax: true
 
 ---
 
-The following document was generated entirely by the LaTeX2Markdown tool.  See below for the generated Markdown and the source LaTeX.
+The following document was generated entirely by the [LaTeX2Markdown][lt2md] tool.  See below for the generated Markdown and the source LaTeX.  The [LaTeX source][ex-tex], [Markdown source][ex-md], and [PDF][ex-pdf] (generated from the LaTeX document) are also available. 
+
+[lt2md]: https://github.com/ajtulloch/LaTeX2Markdown
+[ex-md]: files/converted_latex_sample.md
+[ex-tex]: files/latex_sample.tex
+[ex-pdf]: files/latex_sample.pdf
 
 <hr>
 
-###  Example Section
+##  Usage
 
-#### Theorem 1 (Euclid)
+
+###  Simple Examples
+
+
+This section introduces the usage of the LaTeX2Markdown tool, showing an example of the various environments available.  
+
+#### Theorem 1 (Euclid, 300 BC)
 
 > There are infinitely many primes.
 
@@ -36,14 +48,14 @@ To solve this exercise, we first introduce the following lemma.
 
 #### Proof
 
-It is easy to show by induction that \[
-F_m - 2 = F_0 F_1 \dots F_{m-1}.
-\]  This means that if $d$ divides both $F_n$ and $F_m$ (with $n < m$), then $d$ also divides $F_m - 2$.  Hence, $d$ divides 2.  But every Fermat number is odd, so $d$ is necessarily one.  This proves the lemma.
+It is easy to show by induction that
+\[ F_m - 2 = F_0 F_1 \dots F_{m-1}. \]
+This means that if $d$ divides both $F_n$ and $F_m$ (with $n < m$), then $d$ also divides $F_m - 2$.  Hence, $d$ divides 2.  But every Fermat number is odd, so $d$ is necessarily one.  This proves the lemma.
 
 
 We can now provide a solution to the exercise.
 
-#### Theorem 2 (Goldbach's proof of the infinitude of the primes)
+#### Theorem 2 (Goldbach, 1750)
 
 > There are infinitely many prime numbers.
 
@@ -53,21 +65,28 @@ We can now provide a solution to the exercise.
 Choose a prime divisor $p_n$ of each Fermat number $F_n$.  By the lemma we know these primes are all distinct, showing there are infinitely many primes.
 
 
-###  LaTeX examples
+###  Available environments
 
 
 We can format *italic text*, **bold text**, and `code` blocks.
 
 
 
-1. A list item
-1. Another list item
+1.  A numbered list item
+1.  Another numbered list item
+
+
+
+
+*  A bulleted list item
+*  Another bulleted list item
 
 
 #### Theorem 3
 
-> This is a theorem.  It contains an `align` block.
+> This is a theorem.  It contains an `align` block.  All math environments supported by MathJaX should work with LaTeX - a full list is available on the MathJaX homepage.
 > 
+> Maxwell's equations, differential form.
 > \begin{align}
 > \nabla \cdot \mathbf{E} &= \frac {\rho} {\varepsilon_0} \\\\
 > \nabla \cdot \mathbf{B} &= 0 \\\\
@@ -86,12 +105,19 @@ We can format *italic text*, **bold text**, and `code` blocks.
 > This is a lemma.
 
 
+#### Proposition 1
+
+> This is a proposition
+
+
 #### Proof
 
 This is a proof.
 
-    This is a code listing.
 
+
+
+    This is a code listing.
 <hr>
 
 ### LaTeX Code
@@ -105,34 +131,13 @@ The following is the entire LaTeX document used to generate this post.
 \usepackage{listings}
 \onehalfspacing                 
 
-\usepackage[usenames, dvipsnames]{color}
-\definecolor{graphblue}{RGB}{52, 138, 189}
-\definecolor{graphpurple}{RGB}{122, 104, 166}
-
 \theoremstyle{plain}% default 
 \newtheorem{thm}{Theorem}[section] 
 \newtheorem{lem}[thm]{Lemma} 
 \newtheorem{prop}[thm]{Proposition} 
 \newtheorem{exer}[thm]{Exercise} 
 
-\lstset{
-language=bash,
-stepnumber=0,
-showspaces=false,
-breaklines=true,
-basicstyle=\ttfamily\scriptsize,
-frame=single,
-commentstyle=\scriptsize,
-prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
-showstringspaces=false,
-showtabs=false,
-identifierstyle=\ttfamily,
-commentstyle=\color{graphpurple},
-keywordstyle=\color{graphblue},
-tabsize=2
-}
-
-\title{Introduction to LaTeX2Markdown}
+\title{LaTeX2Markdown Examples}
 \author{Andrew Tulloch}
 \begin{document}
 
@@ -140,8 +145,11 @@ tabsize=2
 \maketitle
 % LaTeX2Markdown END
 
-\section{Example Section}
-\begin{thm}[Euclid]
+\section{Simple Examples}
+
+This section introduces the usage of the LaTeX2Markdown tool, showing an example of the various environments available.  
+
+\begin{thm}[Euclid, 300 BC]
     There are infinitely many primes.
 \end{thm}
 
@@ -161,15 +169,14 @@ To solve this exercise, we first introduce the following lemma.
 \end{lem}
 
 \begin{proof}
-    It is easy to show by induction that \[
-    F_m - 2 = F_0 F_1 \dots F_{m-1}.
-\]  
+    It is easy to show by induction that 
+    \[ F_m - 2 = F_0 F_1 \dots F_{m-1}. \]
     This means that if $d$ divides both $F_n$ and $F_m$ (with $n < m$), then $d$ also divides $F_m - 2$.  Hence, $d$ divides 2.  But every Fermat number is odd, so $d$ is necessarily one.  This proves the lemma.
 \end{proof}
 
 We can now provide a solution to the exercise.
 
-\begin{thm}[Goldbach's proof of the infinitude of the primes]
+\begin{thm}[Goldbach, 1750]
     There are infinitely many prime numbers.
 \end{thm}
 
@@ -177,18 +184,26 @@ We can now provide a solution to the exercise.
     Choose a prime divisor $p_n$ of each Fermat number $F_n$.  By the lemma we know these primes are all distinct, showing there are infinitely many primes.
 \end{proof}
 
-\section{LaTeX examples}
+\section{Demonstration of the environments}
 
 We can format \emph{italic text}, \textbf{bold text}, and \texttt{code} blocks.
 
 \begin{enumerate}
-    \item A list item
-    \item Another list item
+    \item A numbered list item
+    \item Another numbered list item
 \end{enumerate}
 
+\begin{itemize}
+    \item A bulleted list item
+    \item Another bulleted list item
+\end{itemize}
+
 \begin{thm}
-    This is a theorem.  It contains an \texttt{align} block.
+    This is a theorem.  It contains an \texttt{align} block.  
     
+    All math environments supported by MathJaX should work with LaTeX - a full list is available on the MathJaX homepage.
+    
+    Maxwell's equations, differential form.
     \begin{align*}
         \nabla \cdot \mathbf{E} &= \frac {\rho} {\varepsilon_0} \\
         \nabla \cdot \mathbf{B} &= 0 \\
@@ -205,13 +220,20 @@ We can format \emph{italic text}, \textbf{bold text}, and \texttt{code} blocks.
     This is a lemma.
 \end{lem}
 
+\begin{prop}
+    This is a proposition
+\end{prop}
+
 \begin{proof}
     This is a proof.
 \end{proof}
 
 \begin{lstlisting}
 This is a code listing.
+One line of code
+Another line of code
 \end{lstlisting}
+
 \end{document}
 {% endhighlight %}
 

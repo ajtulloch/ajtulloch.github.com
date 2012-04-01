@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>{{ site.name }}{% if page.title %} | {{ page.title }}{% endif %}</title>
+
+    {% include styles.html %}
+    {% include scripts.html %}
+    {% if page.mathjax %} 
+        {% include mathjax.html %}
+    {% endif %}
+
+</head>
+
+<body>
+<div class="container_12">
+  <div class="grid_10">
+    <h1><a href="/">Andrew Tulloch</a></h1>
+    <hr>
+  </div>
+</div>
+
+<div class="container_12">
+  <div class="main grid_10">
+
+    <h2 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+  
+    {{ content }}
+  </div>
+</div>
+</body>
+</html>

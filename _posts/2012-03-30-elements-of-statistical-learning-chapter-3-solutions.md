@@ -62,9 +62,7 @@ In the pointwise approach, we seek to estimate the variance of an individual pre
 \end{align} where $\hat \sigma^2$ is the estimated variance of the innovations $\epsilon_i$.
 
 
-\begin{figure}
-\centering\includegraphics[width=\textwidth]{./RCode/CubicRegression.png}
-\end{figure}
+<img src="/images/CubicRegression.png" />
 
 We can implement this algorithm in R as follows:
 

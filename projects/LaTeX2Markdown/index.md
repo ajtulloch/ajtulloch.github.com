@@ -170,7 +170,7 @@ To solve this exercise, we first introduce the following lemma.
 
 \begin{proof}
     It is easy to show by induction that 
-    \[ F_m - 2 = F_0 F_1 \dots F_{m-1}. \]
+    $$ F_m - 2 = F_0 F_1 \dots F_{m-1}. $$
     This means that if $d$ divides both $F_n$ and $F_m$ (with $n < m$), then $d$ also divides $F_m - 2$.  Hence, $d$ divides 2.  But every Fermat number is odd, so $d$ is necessarily one.  This proves the lemma.
 \end{proof}
 

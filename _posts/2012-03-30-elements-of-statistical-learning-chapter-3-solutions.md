@@ -146,11 +146,11 @@ The proof of the matrix version is almost identical, except we replace our vecto
 
 Recall that by a single pass of the Gram-Schmidt procedure, we can write our matrix $X$ as \[
 X = Z \Gamma,
-\] where $Z$ contains the orthogonal columns $z_j$, and $\Gamma$ is an upper-diagonal matrix with ones on the diagonal, and $\gamma_{ij} = \frac{\langle z_i, x_j \rangle}{\| z_i \|^2}$. This is a reflection of the fact that by definition, \[
+\] where $Z$ contains the orthogonal columns $z_j$, and $\Gamma$ is an upper-diagonal matrix with ones on the diagonal, and $\gamma_{ij} = \frac{\langle z_i, x_j \rangle}{\\\| z_i \\\|^2}$. This is a reflection of the fact that by definition, \[
 x_j = z_j + \sum_{k=0}^{j-1} \gamma_{kj} z_k.
 \]
 
-Now, by the $QR$ decomposition, we can write $X = QR$, where $Q$ is an orthogonal matrix and $R$ is an upper triangular matrix.  We have $Q = Z D^{-1}$ and $R = D\Gamma$, where $D$ is a diagonal matrix  with $D_{jj} = \| z_j \|$.
+Now, by the $QR$ decomposition, we can write $X = QR$, where $Q$ is an orthogonal matrix and $R$ is an upper triangular matrix.  We have $Q = Z D^{-1}$ and $R = D\Gamma$, where $D$ is a diagonal matrix  with $D_{jj} = \\\| z_j \\\|$.
 
 Now, by definition of $\hat \beta$, we have \[
 (X^T X) \hat \beta = X^T y.
@@ -160,11 +160,11 @@ R \hat \beta &= Q^T y
 \end{align}
 As $R$ is upper triangular, we can write \begin{align}
 R_{pp} \hat \beta_p &= \langle q_p, y \rangle \\\\
-\| z_p \| \hat \beta_p &= \| z_p \|^{-1} \langle z_p, y \rangle \\\\
-\hat \beta_p &= \frac{\langle z_p, y \rangle}{\| z_p \|^2}
+\\\| z_p \\\| \hat \beta_p &= \\\| z_p \\\|^{-1} \langle z_p, y \rangle \\\\
+\hat \beta_p &= \frac{\langle z_p, y \rangle}{\\\| z_p \\\|^2}
 \end{align} in accordance with our previous results.  Now, by back substitution, we can obtain the sequence of regression coefficients $\hat \beta_j$.  As an example, to calculate $\hat \beta_{p-1}$, we have \begin{align}
 R_{p-1, p-1} \hat \beta_{p-1} + R_{p-1,p} \hat \beta_p &= \langle q_{p-1}, y \rangle \\\\
-\| z_{p-1} \| \hat \beta_{p-1} + \| z_{p-1} \| \gamma_{p-1,p} \hat \beta_p &= \| z_{p-1} \|^{-1} \langle z_{p-1}, y \rangle
+\\\| z_{p-1} \\\| \hat \beta_{p-1} + \\\| z_{p-1} \\\| \gamma_{p-1,p} \hat \beta_p &= \\\| z_{p-1} \\\|^{-1} \langle z_{p-1}, y \rangle
 \end{align} and then solving for $\hat \beta_{p-1}$. This process can be repeated for all $\beta_j$, thus obtaining the regression coefficients in one pass of the Gram-Schmidt procedure.
 
 
@@ -208,7 +208,7 @@ The modified solution merely has a shifted intercept term, and all other coeffic
 
 #### Proof
 
-Denote the columns of $X$ by $x_0, \dots, x_{p}$, the columns of $Q$ by $z_0, \dots, z_p$, the columns of $\tilde X$ by $\tilde x_1, \dots, x_n$, and the columns of $U$ by $u_1, \dots, u_p$.  Without loss of generality, we can assume that for all $i$, $\| x_i \| = 1$ and that $X$ is non-singular (this cleans up the proof somewhat).
+Denote the columns of $X$ by $x_0, \dots, x_{p}$, the columns of $Q$ by $z_0, \dots, z_p$, the columns of $\tilde X$ by $\tilde x_1, \dots, x_n$, and the columns of $U$ by $u_1, \dots, u_p$.  Without loss of generality, we can assume that for all $i$, $\\\| x_i \\\| = 1$ and that $X$ is non-singular (this cleans up the proof somewhat).
 
 
 First, note that by the QR decomposition, we have that $\text{span}(x_0, \dots, x_j) = \text{span}(z_0, \dots, z_j)$ for any $0 \leq j \leq p$.
@@ -228,7 +228,7 @@ TODO: When is $Q_2$ equal to $U$ up to parity?  Is it where columns of
 
 Select the vector $x_{j'}$ where
 \begin{align}
-x_{j'} = \text{argmin}_{j = q+1, \dots, p} \left| \left\langle \frac{x_q}{\| x_q \|}, r \right\rangle \right|
+x_{j'} = \text{argmin}_{j = q+1, \dots, p} \left| \left\langle \frac{x_q}{\\\| x_q \\\|}, r \right\rangle \right|
 \end{align}
 
 This selects the vector that explains the maximal amount of variance in $r$ given $X_1$, and thus reduces the residual sum of squares the most.  It is then possible to repeat this procedure by updating $X_2$ as in Algorithm 3.1.

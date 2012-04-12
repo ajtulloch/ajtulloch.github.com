@@ -136,11 +136,11 @@ x^T \hat \Sigma^{-1} (\hat \mu_2 - \hat \mu_1) > \frac{1}{N} \left( N_1 \hat \mu
 > Suppose that we have $N$ points $x_i \in \mathbb{R}^p$ in general position, with class labels $y_i \in \{-1, 1 \}$.  Prove that the perceptron learning algorithm converges to a separating hyperplane in a finite number of steps.
 > 
 > 
-> 1.  Denote a hyperplane by $f(x) = \beta^T x^\star = 0$.  Let $z_i = \frac{x_i^\star}{\| x_i^\star \|}$.  Show that separability implies the existence of a $\beta_{\text{sep}}$ such that $y_i \beta_{\text{sep}}^T z_i \geq 1$ for all $i$.
+> 1.  Denote a hyperplane by $f(x) = \beta^T x^\star = 0$.  Let $z_i = \frac{x_i^\star}{\\\| x_i^\star \\\|}$.  Show that separability implies the existence of a $\beta_{\text{sep}}$ such that $y_i \beta_{\text{sep}}^T z_i \geq 1$ for all $i$.
 > 1.  Given a current $\beta_{\text{old}}$, the perceptron algorithm identifies a pint $z_i$ that is misclassified, and produces the update $\beta_{\text{new}} \leftarrow \beta_{\text{old}} + y_i z_i$.  Show that
 > \[
-> \| \beta_{\text{new}} - \beta_{\text{sep}} \|^2 \leq \| \beta_{\text{old}} - \beta_{\text{sep}} \|^2 - 1
-> \] and hence that the algorithm converges to a separating hyperplane in no more than $\| \beta_{\text{start}} - \beta_{\text{sep}} \|^2$ steps.
+> \\\| \beta_{\text{new}} - \beta_{\text{sep}} \\\|^2 \leq \\\| \beta_{\text{old}} - \beta_{\text{sep}} \\\|^2 - 1
+> \] and hence that the algorithm converges to a separating hyperplane in no more than $\\\| \beta_{\text{start}} - \beta_{\text{sep}} \\\|^2$ steps.
 
 
 #### Proof
@@ -154,10 +154,10 @@ y_i \beta^T_\text{sep} z^\star_i \geq \epsilon
 y_i \beta^T_\text{sep} z^\star_i \geq 1.
 \]
 1.  We have \begin{align}
-\| \beta_\text{new} - \beta_\text{sep} \|^2 &= \| \beta_\text{new} \|^2 + \| \beta_\text{sep} \|^2 - 2 \beta_\text{sep}^T \beta_\text{new} \\\\
-&= \| \beta_\text{old} + y_i z_i \|^2 + \| \beta_\text{sep} \|^2 - 2 \beta_\text{sep}^T \left( \beta_\text{old} + y_i z_i \right) \\\\
-&= \| \beta_\text{old} \|^2 + \| y_i z_i \|^2 + 2 y_i \beta_\text{old}^T z_i + \| \beta_\text{sep} \|^2 - 2 \beta_\text{sep}^T \beta_0 - 2 y_i \beta^T_\text{sep} z_i \\\\
-&\leq \| \beta_\text{old} \|^2 + \| \beta_\text{sep} \|^2 - 2 \beta_\text{sep}^T \beta_\text{old} + 1 - 2 \\\\
-&= \| \beta_\text{old} - \beta_\text{sep} \|^2 - 1.
-\end{align} Let $\beta_k, k = 0, 1, 2, \dots$ be the sequence of iterates formed by this procedure, with $\beta_0 = \beta_\text{start}$. Let $k^\star = \left\lceil \| \beta_\text{start} - \beta_\text{sep} \|^2 \right\rceil$.
-Then by the above result, we must have $\| \beta_{k^\star} - \beta_\text{sep} \|^2 = 0$, and by properties of the norm we have that $\beta_{k^\star} = \beta_\text{sep}$, and so we have reached a separating hyperplane in no more than $k^\star$ steps.
+\\\| \beta_\text{new} - \beta_\text{sep} \\\|^2 &= \\\| \beta_\text{new} \\\|^2 + \\\| \beta_\text{sep} \\\|^2 - 2 \beta_\text{sep}^T \beta_\text{new} \\\\
+&= \\\| \beta_\text{old} + y_i z_i \\\|^2 + \\\| \beta_\text{sep} \\\|^2 - 2 \beta_\text{sep}^T \left( \beta_\text{old} + y_i z_i \right) \\\\
+&= \\\| \beta_\text{old} \\\|^2 + \\\| y_i z_i \\\|^2 + 2 y_i \beta_\text{old}^T z_i + \\\| \beta_\text{sep} \\\|^2 - 2 \beta_\text{sep}^T \beta_0 - 2 y_i \beta^T_\text{sep} z_i \\\\
+&\leq \\\| \beta_\text{old} \\\|^2 + \\\| \beta_\text{sep} \\\|^2 - 2 \beta_\text{sep}^T \beta_\text{old} + 1 - 2 \\\\
+&= \\\| \beta_\text{old} - \beta_\text{sep} \\\|^2 - 1.
+\end{align} Let $\beta_k, k = 0, 1, 2, \dots$ be the sequence of iterates formed by this procedure, with $\beta_0 = \beta_\text{start}$. Let $k^\star = \left\lceil \\\| \beta_\text{start} - \beta_\text{sep} \\\|^2 \right\rceil$.
+Then by the above result, we must have $\\\| \beta_{k^\star} - \beta_\text{sep} \\\|^2 = 0$, and by properties of the norm we have that $\beta_{k^\star} = \beta_\text{sep}$, and so we have reached a separating hyperplane in no more than $k^\star$ steps.

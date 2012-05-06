@@ -71,6 +71,14 @@ blockquote p {
 .contact {
   font-weight: bold;
 }
+
+/* Images */
+
+img.R {
+  width: 600px;
+  position: relative;
+}
+
 /* Sidebar */
 
 #d3-logo {
@@ -111,6 +119,8 @@ pre {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  width: 600px;
+
 }
 
 

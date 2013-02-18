@@ -216,7 +216,7 @@ In the $k$-nearest-neighbour representation, we have \[
 
 Our implementation in R and graphs are attached.
 
-{% highlight R %}
+{% highlight r %}
 library('ProjectTemplate')
 load.project()
 

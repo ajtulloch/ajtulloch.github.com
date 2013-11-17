@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>{{ site.name }}{% if page.title %} | {{ page.title }}{% endif %}</title>
+
+    {% include styles.html %}
+    {% include scripts.html %}
+    {% if page.mathjax %} 
+        {% include mathjax.html %}
+    {% endif %}
+
+</head>
+
+<body>
+<div class="container_12">
+  <div class="grid_10">
+    <h1><a href="/">Andrew Tulloch</a></h1>
+    <hr>
+  </div>
+</div>
+
+<div class="container_12">
+  <div class="sidebar grid_3">
+    <div id="d3-logo">
+    </div>
+    <ul class="nav"> 
+      <li><a href="/">Home</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      <li><a href="/PDFs/AndrewTullochCV.pdf">CV</a></li>
+      <li><a href="/projects/LaTeX2Markdown/">LaTeX2Markdown</a></li>
+    </ul>
+    </ul>
+    <p>I'm Andrew Tulloch.  I'm an engineer at Facebook.</p>
+    <p>I'm available on <a href="https://github.com/ajtulloch">GitHub</a>, <a href="http://www.linkedin.com/profile/view?id=159181862&amp;locale=en_US&amp;trk=tab_pro">LinkedIn</a>, <a href="https://twitter.com/#!/ajtulloch">Twitter</a>, and <a href="http://www.facebook.com/andrew.tulloch">Facebook</a>.</p>
+  </div>
+
+  <div class="main grid_7">
+    {{ content }}
+  </div>
+</div>
+</body>
+</html>

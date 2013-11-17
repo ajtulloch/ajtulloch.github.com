@@ -1,4 +1,0 @@
-# Jekyll
-permalink: /:year/:title/
-exclude: ["Rakefile", "README.md"]
-name: Andrew Tulloch
